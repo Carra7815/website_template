@@ -10,13 +10,10 @@ function App() {
       <div className="min-h-screen">
         <nav className="bg-blue-600 p-4">
           <div className="container mx-auto flex items-center justify-between">
-            <div className="text-xl font-bold text-white">School Club</div>
+            <Link to="/" className="text-xl font-bold text-white">
+              my website
+            </Link>
             <ul className="flex space-x-4">
-              <li>
-                <Link to="/" className="text-white hover:text-blue-200">
-                  Home
-                </Link>
-              </li>
               <li>
                 <Link to="/about" className="text-white hover:text-blue-200">
                   About
