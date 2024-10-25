@@ -22,14 +22,14 @@ function Navmenu() {
           <Section className="focus:bg-slate-500">
             <Header className="pl-4 font-bold">Us</Header>
             <MenuItem
-              className="cursor-pointer rounded-md pl-5 outline-none hover:bg-violet-800"
-              onAction={() => alert("open")}
+              className="block cursor-pointer rounded-md pl-5 outline-none hover:bg-violet-800"
+              href="/about"
             >
               Support
             </MenuItem>
             <MenuItem
-              className="cursor-pointer rounded-md pl-5 outline-none hover:bg-violet-800"
-              onAction={() => alert("rename")}
+              className="block cursor-pointer rounded-md pl-5 outline-none hover:bg-violet-800"
+              href="/projects"
             >
               Contact
             </MenuItem>

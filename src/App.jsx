@@ -4,10 +4,10 @@ import { Routes, Route, useHref, useNavigate } from "react-router-dom";
 
 import { RouterProvider } from "react-aria-components";
 
-import Navbar from "./components/Navbar";
-import Home from "./components/Home";
-import About from "./components/About";
-import Projects from "./components/Projects";
+import Navbar from "@components/Navbar";
+import Home from "@components/Home";
+import About from "@components/About";
+import Projects from "@components/Projects";
 
 function App() {
   let navigate = useNavigate();
