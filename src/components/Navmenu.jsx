@@ -18,18 +18,20 @@ function Navmenu() {
         <Bars3Icon className="h-6 w-6 text-black" />
       </Button>
       <Popover>
-        <Menu className="w-64 rounded bg-slate-950 p-1 text-slate-200 outline outline-1 outline-white">
+        <Menu className="w-64 rounded bg-slate-950 p-1 pb-3 text-slate-200 outline outline-1 outline-white">
           <Section className="focus:bg-slate-500">
-            <Header className="pl-4 font-bold">Us</Header>
+            <Header className="no-select cursor-default pl-4 font-bold">
+              Us
+            </Header>
             <MenuItem
               className="block cursor-pointer rounded-md pl-5 outline-none hover:bg-violet-800"
-              href="/about"
+              href="/support"
             >
               Support
             </MenuItem>
             <MenuItem
               className="block cursor-pointer rounded-md pl-5 outline-none hover:bg-violet-800"
-              href="/projects"
+              href="/contact"
             >
               Contact
             </MenuItem>
