@@ -1,33 +1,21 @@
-// import React from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import React from "react";
+
+import { Routes, Route, useHref, useNavigate } from "react-router-dom";
+
+import { RouterProvider } from "react-aria-components";
+
+import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import About from "./components/About";
 import Projects from "./components/Projects";
 
 function App() {
-  return (
-    <Router>
-      <div className="min-h-screen">
-        <nav className="bg-blue-600 p-4">
-          <div className="container mx-auto flex items-center justify-between">
-            <Link to="/" className="text-xl font-bold text-white">
-              my website
-            </Link>
-            <ul className="flex space-x-4">
-              <li>
-                <Link to="/about" className="text-white hover:text-blue-200">
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link to="/projects" className="text-white hover:text-blue-200">
-                  Projects
-                </Link>
-              </li>
-            </ul>
-          </div>
-        </nav>
+  let navigate = useNavigate();
 
+  return (
+    <RouterProvider navigate={navigate} useHref={useHref}>
+      <Navbar />
+      <div className="min-h-screen">
         <div className="container mx-auto mt-8 p-4">
           <Routes>
             <Route path="/" element={<Home />} />
@@ -36,7 +24,7 @@ function App() {
           </Routes>
         </div>
       </div>
-    </Router>
+    </RouterProvider>
   );
 }
 
