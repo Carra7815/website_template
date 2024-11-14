@@ -4,12 +4,12 @@ const projects = [
   {
     id: 1,
     name: "Annual Science Fair",
-    description: "Showcasing innovative student projects",
+    description: "Showcasing innovative volunteer projects",
   },
   {
     id: 2,
     name: "Community Outreach Program",
-    description: "Engaging with local schools to promote STEM",
+    description: "Engaging with local programs to promote STEM",
   },
   {
     id: 3,
@@ -23,11 +23,15 @@ function Projects() {
     <div className="mx-auto max-w-2xl">
       <h1 className="mb-4 text-3xl font-bold">Our Projects</h1>
       <p className="mb-6">
-        Here are some of the exciting projects our club is currently working on:
+        Here are some of the exciting projects our organization is currently
+        working on:
       </p>
       <ul className="space-y-4">
         {projects.map((project) => (
-          <li key={project.id} className="rounded bg-white p-4 shadow">
+          <li
+            key={project.id}
+            className="rounded bg-white p-4 shadow dark:bg-sky-950"
+          >
             <h2 className="mb-2 text-xl font-semibold">{project.name}</h2>
             <p>{project.description}</p>
           </li>

@@ -8,7 +8,8 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "begin": "pnpm i && pnpm dev"
   },
   "dependencies": {
     "@heroicons/react": "^2.1.5",
