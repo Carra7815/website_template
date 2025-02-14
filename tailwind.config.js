@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
-const defaultTheme = require("tailwindcss/defaultTheme");
+import defaultTheme from "tailwindcss/defaultTheme";
+import ariaComponents from "tailwindcss-react-aria-components";
 
 export default {
   darkMode: "selector",
@@ -11,5 +12,5 @@ export default {
       },
     },
   },
-  plugins: [require("tailwindcss-react-aria-components")],
+  plugins: [ariaComponents],
 };

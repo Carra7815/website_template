@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link } from "react-router";
 
 import Navmenu from "./Navmenu";
 import ToggleTheme from "./ToggleTheme";
